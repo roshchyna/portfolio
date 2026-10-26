@@ -1,0 +1,29 @@
+{
+	"name": "portfolio",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"check": "biome check .",
+		"check:write": "biome check --write .",
+		"typecheck": "tsc -b --pretty false",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"react": "^19.2.8",
+		"react-dom": "^19.2.8"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.5.14",
+		"@tailwindcss/vite": "^4.1.16",
+		"@types/node": "^24.13.3",
+		"@types/react": "^19.2.18",
+		"@types/react-dom": "^19.2.7",
+		"@vitejs/plugin-react": "^6.1.1",
+		"tailwindcss": "^4.1.16",
+		"typescript": "~6.0.2",
+		"vite": "^8.3.0"
+	}
+}
