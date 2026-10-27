@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import AboutSection from "./components/sections/AboutSection";
 import EducationSection from "./components/sections/EducationSection";
 import ExperienceSection from "./components/sections/ExperienceSection";
 import ProjectSection from "./components/sections/ProjectSection";
+import useSectionNavigation from "./hooks/useSectionNavigation";
 
 const navigation = [
 	{ href: "#about", label: "About" },
@@ -52,7 +53,7 @@ function MailIcon() {
 }
 
 function App() {
-	const [activeSection, setActiveSection] = useState("about");
+	const activeSection = useSectionNavigation(navigation);
 
 	useEffect(() => {
 		const updateSpotlight = (event: PointerEvent) => {
@@ -68,27 +69,6 @@ function App() {
 
 		window.addEventListener("pointermove", updateSpotlight, { passive: true });
 		return () => window.removeEventListener("pointermove", updateSpotlight);
-	}, []);
-
-	useEffect(() => {
-		const sections = navigation
-			.map(({ href }) => document.querySelector(href))
-			.filter((section): section is Element => Boolean(section));
-		const observer = new IntersectionObserver(
-			(entries) => {
-				const visibleSection = entries
-					.filter((entry) => entry.isIntersecting)
-					.sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-				if (visibleSection) {
-					setActiveSection(visibleSection.target.id);
-				}
-			},
-			{ rootMargin: "-18% 0px -62%", threshold: [0, 0.25, 0.5] },
-		);
-
-		for (const section of sections) observer.observe(section);
-		return () => observer.disconnect();
 	}, []);
 
 	return (
