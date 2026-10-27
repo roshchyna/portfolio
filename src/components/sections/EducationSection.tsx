@@ -35,9 +35,9 @@ const EducationSection = () => {
 					</p>
 					<ul className="mt-4 space-y-2 text-sm leading-6 text-slate-400">
 						<li>Meta Front-End Developer Professional Certificate</li>
-						<li>Building with the Claude API — Anthropic Education</li>
-						<li>CSS for JavaScript Developers — Josh W. Comeau</li>
-						<li>Introduction to Python Programming — WGU Academy</li>
+						<li>Building with the Claude API - Anthropic Education</li>
+						<li>CSS for JavaScript Developers - Josh W. Comeau</li>
+						<li>Introduction to Python Programming - WGU Academy</li>
 					</ul>
 				</div>
 			</div>
