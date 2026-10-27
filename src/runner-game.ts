@@ -177,7 +177,7 @@ const draw = () => {
 
 const finishGame = () => {
 	running = false;
-	statusElement?.replaceChildren(`Game over — score ${score}`);
+	statusElement?.replaceChildren(`Game over - score ${score}`);
 	restartButton?.classList.remove("hidden");
 };
 
