@@ -38,6 +38,21 @@ function LinkedinIcon() {
 	);
 }
 
+function WebsiteIcon() {
+	return (
+		<svg aria-hidden="true" className="size-5" fill="none" viewBox="0 0 24 24">
+			<circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.7" />
+			<path
+				d="M3 12h18M12 3c2.3 2.46 3.5 5.46 3.5 9s-1.2 6.54-3.5 9c-2.3-2.46-3.5-5.46-3.5-9S9.7 5.46 12 3Z"
+				stroke="currentColor"
+				strokeLinecap="round"
+				strokeLinejoin="round"
+				strokeWidth="1.7"
+			/>
+		</svg>
+	);
+}
+
 function MailIcon() {
 	return (
 		<svg aria-hidden="true" className="size-5" fill="none" viewBox="0 0 24 24">
@@ -136,6 +151,7 @@ function App() {
 							<a
 								aria-label="Mykhailo Roshchyna on GitHub"
 								className="social-link"
+								data-tooltip="GitHub"
 								href="https://github.com/roshchyna/"
 								rel="noreferrer"
 								target="_blank"
@@ -145,6 +161,7 @@ function App() {
 							<a
 								aria-label="Mykhailo Roshchyna on LinkedIn"
 								className="social-link"
+								data-tooltip="LinkedIn"
 								href="https://www.linkedin.com/in/mykhailo-roshchyna/"
 								rel="noreferrer"
 								target="_blank"
@@ -152,8 +169,19 @@ function App() {
 								<LinkedinIcon />
 							</a>
 							<a
+								aria-label="Visit MySofinka"
+								className="social-link"
+								data-tooltip="MySofinka"
+								href="https://mysofinka.com"
+								rel="noreferrer"
+								target="_blank"
+							>
+								<WebsiteIcon />
+							</a>
+							<a
 								aria-label="Email Mykhailo Roshchyna"
 								className="social-link"
+								data-tooltip="Email"
 								href="mailto:mykhailo.roshchyna@gmail.com"
 							>
 								<MailIcon />

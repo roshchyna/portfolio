@@ -25,9 +25,18 @@ const EducationSection = () => {
 						WES evaluated
 					</p>
 					<h3 className="mt-2 font-semibold text-slate-100">
-						Master’s degrees in Law and Public Administration
+						Master’s degrees in Public Administration
 					</h3>
-					<p className="mt-1 text-sm text-slate-400">Ukraine</p>
+					<p className="mt-1 text-sm text-slate-400">Kharkiv Regional Institute of Public Administration, Ukraine</p>
+				</div>
+        <div>
+					<p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+						WES evaluated
+					</p>
+					<h3 className="mt-2 font-semibold text-slate-100">
+						Master’s degrees in Law 
+					</h3>
+					<p className="mt-1 text-sm text-slate-400">Yaroslav the Wise National Law University, Ukraine</p>
 				</div>
 				<div className="rounded-2xl border border-slate-800 bg-slate-900/35 p-5">
 					<p className="text-xs font-bold uppercase tracking-[0.18em] text-violet-300">

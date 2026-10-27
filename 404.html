@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="stylesheet" href="/src/index.css" />
+		<title>Page Not Found | Mykhailo Roshchyna</title>
+	</head>
+	<body>
+		<div aria-hidden="true" class="pointer-glow"></div>
+
+		<main class="relative z-10 flex min-h-screen items-center px-6 py-16 sm:px-10">
+			<div class="mx-auto w-full max-w-2xl">
+				<p class="text-sm font-bold uppercase tracking-[0.2em] text-sky-300">
+					404
+				</p>
+				<h1 class="mt-4 text-4xl font-bold tracking-[-0.04em] text-slate-50 sm:text-5xl">
+					Looks like you’ve wandered off the page.
+				</h1>
+				<div class="flex flex-wrap gap-3">
+					<a class="contact-button" href="/">Back to homepage</a>
+					<button
+						aria-controls="runner-game"
+						aria-expanded="false"
+						class="contact-button game-toggle"
+						id="game-toggle"
+						type="button"
+					>
+						Play a quick game
+					</button>
+				</div>
+
+				<section
+					aria-labelledby="runner-heading"
+					class="runner-shell hidden"
+					id="runner-game"
+				>
+					<div class="flex items-start justify-between gap-4">
+						<div>
+							<h2 class="font-bold text-slate-100" id="runner-heading">
+								Pixel Runner
+							</h2>
+							<p class="mt-1 text-sm text-slate-400">
+								Press Space, click, or tap to jump.
+							</p>
+						</div>
+						<p class="shrink-0 text-sm font-bold text-sky-300">
+							Score <span id="runner-score">0</span>
+						</p>
+					</div>
+
+					<canvas
+						aria-label="Pixel Runner game. Jump over the obstacles."
+						class="runner-canvas"
+						height="220"
+						id="runner-canvas"
+						role="img"
+						width="720"
+					></canvas>
+
+					<div class="mt-4 flex items-center gap-3">
+						<button class="runner-control" id="runner-jump" type="button">
+							Jump
+						</button>
+						<button
+							class="runner-control hidden"
+							id="runner-restart"
+							type="button"
+						>
+							Play again
+						</button>
+						<p
+							aria-live="polite"
+							class="text-sm text-slate-400"
+							id="runner-status"
+						>
+							Ready
+						</p>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<script type="module" src="/src/not-found.ts"></script>
+	</body>
+</html>
