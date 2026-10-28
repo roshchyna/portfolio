@@ -12,19 +12,19 @@ const AboutSection = () => {
 			</h2>
 			<div className="space-y-5 text-[0.97rem] leading-7 text-slate-400">
 				<p>
-					I’m a frontend engineer with six years of experience turning complex
+					I’m a frontend engineer with <strong className="font-semibold text-slate-200">six years of experience</strong> turning complex
 					product requirements into clear, dependable interfaces. My work spans
 					cybersecurity dashboards, insurance platforms, content-driven
 					websites, and mobile products.
 				</p>
 				<p>
-					I’m most at home where thoughtful interaction design meets frontend
-					architecture: reusable component systems, accessible workflows, data
-					visualization, API integration, performance, and automated testing.
+					I’m most at home where thoughtful interaction design meets <strong className="font-semibold text-slate-200">frontend
+					architecture:</strong> reusable component systems, accessible workflows, <strong className="font-semibold text-slate-200">data
+					visualization</strong>, API integration, performance, and automated testing.
 				</p>
 				<p>
 					Alongside product work, I’m pursuing an M.S. in Software Engineering
-					with an AI Engineering specialization at WGU, expected in 2027.
+					with an <strong className="font-semibold text-slate-200 whitespace-nowrap">AI Engineering</strong> specialization at WGU, expected in 2027.
 				</p>
 			</div>
 			<ul
